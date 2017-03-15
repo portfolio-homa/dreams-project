@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp'),
     rename = require('gulp-rename'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -40,8 +42,8 @@ gulp.task('html', function () {
 
 //watch
 gulp.task('watch', function () {
-    gulp.watch(['./scss/main.scss'], ['sass']);
-    gulp.watch(['./*.html'], ['html']);
+    gulp.watch('./scss/main.scss', ['sass']);
+    gulp.watch('./*.html', ['html']);
 });
 
 
