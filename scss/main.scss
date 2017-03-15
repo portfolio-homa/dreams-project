@@ -1,4 +1,10 @@
+/*default*/
+@import "~normalize-scss/sass/normalize/_normalize-mixin.scss";
+@import "~normalize-scss/sass/normalize/_variables.scss";
+@import "~normalize-scss/sass/normalize/_vertical-rhythm.scss";
+
+/*main styles*/
 @import "banner/header/header";
 @import "base/common";
 @import "base/typography";
-@import "helpers/variables";
+@import "base/variables";
