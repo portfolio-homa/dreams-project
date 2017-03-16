@@ -1,11 +1,5 @@
-/*default*/
-@import "../node_modules/normalize-scss/sass/normalize/_normalize-mixin.scss";
-@import "../node_modules/normalize-scss/sass/normalize/_variables.scss";
-@import "../node_modules/normalize-scss/sass/normalize/_vertical-rhythm.scss";
-
 /*main styles*/
 @import "base/common";
 @import "base/typography";
 @import "base/variables";
 @import "header/header";
-@import "header/header__nav";

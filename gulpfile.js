@@ -18,7 +18,7 @@ gulp.task('connect', function () {
 });
 
 
-//sass
+//helpers
 gulp.task('sass', function () {
     gulp.src('./scss/main.scss')
         .pipe(sass().on('error', sass.logError))
