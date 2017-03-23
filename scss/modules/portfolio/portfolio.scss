@@ -16,7 +16,6 @@
 
     &_background {
       width: 584px;
-      height: 423px;
       background: url("../../../img/background-users-icon.jpg") no-repeat;
     }
 
@@ -43,6 +42,10 @@
   &__item {
     display: flex;
     margin-bottom: 30px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
   }
 
   &__info {
