@@ -17,12 +17,12 @@
 
 .services {
   display: flex;
+  justify-content: space-between;
   width: 1070px;
   margin: 80px auto 100px;
 
   &__item {
     width: 283px;
-    margin-right: 105px;
 
     &:last-child {
       margin-right: 0;

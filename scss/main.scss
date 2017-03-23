@@ -1,8 +1,11 @@
-@import "../fonts/font-awesome/scss/font-awesome";
+/*helpers*/
+@import "../css/normalize.css/normalize";
+@import "helpers/scss-font-awesome/font-awesome";
 
-/*main styles*/
+/*modules*/
 @import "base/common";
 @import "base/typography";
 @import "base/variables";
-@import "header/header";
-@import "services/services";
+@import "modules/header/header";
+@import "modules/services/services";
+@import "modules/expertise/expertise";

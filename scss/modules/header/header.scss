@@ -1,20 +1,21 @@
 .header {
   height: 645px;
-  background-image: url("../../img/header-background.jpg");
+  background-image: url("../../../img/header-background.jpg");
   background-size: cover;
 
   &__nav {
-    width: 1010px;
+    width: 1110px;
     display: flex;
+    justify-content: space-between;
     margin: 0 auto;
-    padding: 40px;
+    padding-top: 40px;
 
     &-logo {
-      width: 385px;
       text-decoration: none;
       font: 36px $logoFont;
       text-transform: capitalize;
       color: $WHITE;
+      flex-grow: 2;
     }
   }
 
@@ -50,17 +51,20 @@
 
 .navigation {
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 
   &__item {
     text-decoration: none;
     text-transform: $textTransform;
     font: $paragraph1Size $headline2Font;
     color: $WHITE;
-    margin-right: 50px;
     transition: color 0.2s;
+    flex-grow: 1;
 
     &:last-child {
-      margin-right: 0;
+      flex-grow: 0;
     }
 
     &:hover {

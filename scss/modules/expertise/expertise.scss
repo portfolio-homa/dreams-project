@@ -1,0 +1,91 @@
+.expertise-wrap {
+  background-color: $ALABASTER;
+
+  &_width {
+    height: 620px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__block {
+    flex-grow: 1;
+
+    &-img {
+      width: 420px;
+      height: 620px;
+    }
+  }
+}
+
+.other-expertise {
+  flex-grow: 2;
+  margin: 100px 80px 85px 145px;
+
+  &__title {
+    text-transform: $textTransform;
+    font: $heading2Size $headline1Font;
+    color: $MINE_SHAFT;
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    font: $paragraph1Size $mainFont;
+    color: $BOULDER;
+    margin-top: 0;
+    margin-bottom: 55px;
+  }
+
+  &__button {
+    text-decoration: none;
+    text-align: center;
+    width: 178px;
+    height: 69px;
+    display: inline-block;
+    font: $paragraph1Size $headline1Font;
+    color: $MINE_SHAFT;
+    background-color: $WHITE;
+    border-radius: 50px;
+    line-height: 69px;
+    border: 1px solid $FRENCH_PASS;
+  }
+}
+
+.expertise {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &__item {
+    width: 49%;
+    display: flex;
+    margin-bottom: 30px;
+
+    &-title {
+      text-transform: $textTransform;
+      font: $heading4Size $headline2Font;
+      color: $MINE_SHAFT;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &-text {
+      font: $paragraph2Size $mainFont;
+      color: $BOULDER;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.fa-cog, .fa-cloud, .fa-star-o, .fa-lock {
+  font-size: 30px;
+  color: $BOULDER;
+  margin-right: 15px;
+}
+
+.fa-lock {
+  margin-left: 10px;
+}
