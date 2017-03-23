@@ -1,7 +1,7 @@
 .expertise-wrap {
   background-color: $ALABASTER;
 
-  &_width {
+  &_height {
     height: 620px;
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,6 @@
   &__text {
     font: $paragraph1Size $mainFont;
     color: $BOULDER;
-    margin-top: 0;
     margin-bottom: 55px;
   }
 
@@ -67,25 +66,23 @@
       text-transform: $textTransform;
       font: $heading4Size $headline2Font;
       color: $MINE_SHAFT;
-      margin-top: 0;
-      margin-bottom: 0;
     }
 
     &-text {
       font: $paragraph2Size $mainFont;
       color: $BOULDER;
-      margin-top: 0;
-      margin-bottom: 0;
     }
   }
 }
 
-.fa-cog, .fa-cloud, .fa-star-o, .fa-lock {
-  font-size: 30px;
-  color: $BOULDER;
-  margin-right: 15px;
-}
+.fa {
+  &-cog, &-cloud, &-star-o, &-lock {
+    font-size: 30px;
+    color: $BOULDER;
+    margin-right: 15px;
+  }
 
-.fa-lock {
-  margin-left: 10px;
+  &-lock {
+    margin-left: 10px;
+  }
 }
