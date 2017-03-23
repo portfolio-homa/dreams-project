@@ -1,6 +1,11 @@
 /*helpers*/
 @import "../css/normalize.css/normalize";
 @import "helpers/scss-font-awesome/font-awesome";
+@import "../node_modules/hover.css/scss/effects/2d-transitions/_shrink";
+@import "../node_modules/hover.css/scss/_hacks";
+@import "../node_modules/hover.css/scss/_mixins";
+@import "../node_modules/hover.css/scss/_options";
+@import "../node_modules/hover.css/scss/hover";
 
 /*modules*/
 @import "base/common";
