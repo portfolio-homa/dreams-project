@@ -2,6 +2,7 @@
   background-color: $ALABASTER;
 
   &_height {
+    max-width: 1400px;
     height: 620px;
     display: flex;
     justify-content: space-between;

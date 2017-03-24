@@ -1,5 +1,5 @@
 .pictures-wrap {
-  background-color: $MINE_SHAFT;
+  background-color: $WHITE;
 }
 
 .pictures {
@@ -11,5 +11,6 @@
 
   &__img {
     width: 33.33%;
+    height: 100%;
   }
 }

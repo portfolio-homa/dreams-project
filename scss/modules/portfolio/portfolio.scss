@@ -3,6 +3,8 @@
 }
 
 .portfolio {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 
@@ -16,7 +18,8 @@
 
     &_background {
       width: 584px;
-      background: url("../../../img/background-users-icon.jpg") no-repeat;
+      background: url("../../../img/background-users-icon.jpg") bottom center no-repeat;
+      background-size: contain;
     }
 
     &-title {

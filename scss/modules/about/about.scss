@@ -1,0 +1,43 @@
+.about-wrap {
+  background-color: $WHITE;
+}
+
+.about {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  &__title {
+    text-transform: $textTransform;
+    text-align: center;
+    font: $heading2Size $headline1Font;
+    color: $MINE_SHAFT;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+}
+
+.event {
+  width: 875px;
+  margin: 85px auto 0;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+}
+
+.info {
+  text-align: left;
+
+  &_align {
+    text-align: right;
+  }
+
+  &__title {
+
+  }
+}
