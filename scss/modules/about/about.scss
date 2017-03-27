@@ -22,7 +22,63 @@
 
   &__item {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 95px;
+
+    &::after {
+      content: "";
+      width: 2px;
+      height: 95px;
+      background-color: $SEASHELL;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: auto;
+      bottom: -95px;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+
+    &:last-child {
+      text-decoration: none;
+      width: 184px;
+      margin: 0 auto 95px;
+    }
+
+    &-image {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      border: 7px solid $SEASHELL;
+
+      &_color {
+        background-color: $PICTON_BLUE_LIGHT;
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: rgba($PICTON_BLUE_LIGHT, 0.5);
+        }
+      }
+    }
+
+    &-image:hover &-text {
+      color: $MINE_SHAFT;
+    }
+
+    &-text {
+      width: 93px;
+      text-align: center;
+      text-transform: $textTransform;
+      font: $heading3Size $headline2Font;
+      color: $WHITE;
+      margin: auto;
+      position: relative;
+      top: 30%;
+      transition: color 0.2s;
+    }
   }
 
   &__item:nth-child(2n) {
@@ -32,12 +88,25 @@
 
 .info {
   text-align: left;
+  max-width: 310px;
+  margin-left: 36px;
+
 
   &_align {
     text-align: right;
+    margin-right: 36px;
+    margin-left: 0;
   }
 
   &__title {
+    text-transform: $textTransform;
+    font: bold $heading3Size $headline2Font;
+    color: $MINE_SHAFT;
+    margin-bottom: 23px;
+  }
 
+  &__text {
+    font: $paragraph2Size $mainFont;
+    color: $BOULDER;
   }
 }

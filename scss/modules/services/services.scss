@@ -34,7 +34,7 @@
 
     &-title {
       text-transform: $textTransform;
-      font: $heading3Size $headline2Font;
+      font: bold $heading3Size $headline2Font;
       color: $MINE_SHAFT;
       margin-bottom: 20px;
     }
