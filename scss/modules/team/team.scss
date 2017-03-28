@@ -1,0 +1,86 @@
+.team-wrap {
+  background-color: $ALABASTER;
+}
+
+.team {
+  max-width: 785px;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    text-transform: $textTransform;
+    font: $heading2Size $headline1Font;
+    color: $MINE_SHAFT;
+    padding-top: 100px;
+    margin-bottom: 30px;
+  }
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 70px;
+
+  &__item {
+    width: 220px;
+
+    &-img {
+      width: 220px;
+      height: 220px;
+      background-color: $COD_GRAY;
+      border-radius: 50%;
+      margin-bottom: 25px;
+    }
+
+    &-title, &-text {
+      text-align: center;
+    }
+
+    &-title {
+      text-transform: capitalize;
+      font: $heading3Size $headline1Font;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      display: block;
+      font: $heading4Size $mainFont;
+      color: $BOULDER;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    width: 590px;
+    font: $paragraph1Size $mainFont;
+    color: $BOULDER;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+}
+
+.icons {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  &_width {
+    width: 90px;
+  }
+}
+
+.fa {
+  &-twitter, &-facebook, &-pinterest-p, &-google-plus {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: $WHITE;
+    background-color: $COD_GRAY;
+    line-height: 40px;
+  }
+}
