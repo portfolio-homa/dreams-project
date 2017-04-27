@@ -1,5 +1,6 @@
 .about-wrap {
   background-color: $WHITE;
+  overflow: hidden;
 }
 
 .about {
@@ -86,11 +87,14 @@
   }
 }
 
+.hiddenItem {
+  visibility: hidden;
+}
+
 .info {
   text-align: left;
   max-width: 310px;
   margin-left: 36px;
-
 
   &_align {
     text-align: right;

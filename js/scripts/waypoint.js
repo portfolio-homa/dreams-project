@@ -1,20 +1,28 @@
-var eventItem = $('.event__item'),
-    eventChildren = $('.event').children(eventItem);
+var eventChildren = $('.event').children();
 
 eventChildren.each(function (index, elem) {
-    eventItem.waypoint(function (direction) {
+    $(elem).waypoint(function (direction) {
 
         if ((index + 1) % 2 !== 0 && direction == 'down') {
-            $(elem).addClass('fadeInLeft');
+            $(elem).addClass('fadeInLeft').removeClass('fadeOutLeft').css('visibility', 'visible');
         }
         if ((index + 1) % 2 == 0 && direction == 'down') {
-            $(elem).addClass('fadeInRight');
-        }
-        if (direction !== 'down') {
-            $(elem).removeClass('fadeInLeft');
-            $(elem).removeClass('fadeInRight');
+            $(elem).addClass('fadeInRight').removeClass('fadeOutRight').css('visibility', 'visible');
         }
 
-    }, {offset: '75%'});
+    }, {offset: '80%'});
+
+    $(elem).waypoint(function (direction) {
+
+        if ((index + 1) % 2 !== 0 && direction == 'up') {
+            $(elem).removeClass('fadeInLeft');
+            $(elem).addClass('fadeOutLeft');
+        }
+        if ((index + 1) % 2 == 0 && direction == 'up') {
+            $(elem).removeClass('fadeInRight');
+            $(elem).addClass('fadeOutRight');
+        }
+
+    }, {offset: '80%'});
 });
 
