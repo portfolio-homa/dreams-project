@@ -49,6 +49,10 @@
     border-radius: 50px;
     line-height: 69px;
     border: 1px solid $FRENCH_PASS;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 

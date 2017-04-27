@@ -100,7 +100,12 @@
     color: $WHITE;
     background-color: $PICTON_BLUE_LIGHT;
     border-radius: 50px;
+    border: none;
     line-height: 60px;
     margin-bottom: 60px;
+
+    &:focus {
+      outline: none;
+    }
   }
 }

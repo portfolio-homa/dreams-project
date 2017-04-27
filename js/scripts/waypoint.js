@@ -1,9 +1,20 @@
-var about = $('.about');
+var eventItem = $('.event__item'),
+    eventChildren = $('.event').children(eventItem);
 
-about.waypoint(function (direction) {
-    if (direction == 'down') {
-        about.addClass('fadeInUp');
-    } else {
-        about.removeClass('fadeInUp');
-    }
-}, {offset: '75%'});
+eventChildren.each(function (index, elem) {
+    eventItem.waypoint(function (direction) {
+
+        if ((index + 1) % 2 !== 0 && direction == 'down') {
+            $(elem).addClass('fadeInLeft');
+        }
+        if ((index + 1) % 2 == 0 && direction == 'down') {
+            $(elem).addClass('fadeInRight');
+        }
+        if (direction !== 'down') {
+            $(elem).removeClass('fadeInLeft');
+            $(elem).removeClass('fadeInRight');
+        }
+
+    }, {offset: '75%'});
+});
+

@@ -1,5 +1,6 @@
 /*helpers*/
-@import "../css/animateCss/fadeInUp";
+@import "../css/animateCss/fadeInLeft";
+@import "../css/animateCss/fadeInRight";
 @import "../css/normalize.css/normalize";
 @import "helpers/scss-font-awesome/font-awesome";
 @import "../node_modules/hover.css/scss/effects/2d-transitions/_shrink";
@@ -9,9 +10,9 @@
 @import "../node_modules/hover.css/scss/hover";
 
 /*modules*/
+@import "base/variables";
 @import "base/common";
 @import "base/typography";
-@import "base/variables";
 @import "modules/header/header";
 @import "modules/services/services";
 @import "modules/expertise/expertise";
