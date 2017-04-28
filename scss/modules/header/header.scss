@@ -4,11 +4,11 @@
   background-size: cover;
 
   &__nav {
-    width: 1110px;
+    max-width: 1110px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding-top: 40px;
+    padding: 40px 20px 0;
 
     &-logo {
       text-decoration: none;
@@ -20,8 +20,9 @@
   }
 
   &__info {
-    width: 565px;
+    max-width: 565px;
     margin: 170px auto 0;
+    padding: 0 20px;
 
     &-title {
       text-transform: $textTransform;
@@ -32,7 +33,7 @@
     }
 
     &-text {
-      width: 448px;
+      max-width: 448px;
       text-align: center;
       font: 20px $mainFont;
       color: $SILVER;
@@ -71,4 +72,57 @@
       color: $PICTON_BLUE;
     }
   }
+}
+
+@media (max-width: 767px) {
+  .header {
+    &__nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__info {
+      margin-top: 110px;
+    }
+  }
+
+  .navigation {
+    text-align: center;
+
+    &__item {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 544px) {
+  .navigation {
+    display: block;
+
+    &__item {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .header {
+    &__info {
+      margin-top: 30px;
+    }
+  }
+
+  .header__info-title {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+
+  .header__info-text {
+    margin-top: 30px;
+  }
+
 }
