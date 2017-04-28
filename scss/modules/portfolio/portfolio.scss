@@ -7,21 +7,26 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 70px;
 
   &__info, &__img {
-    margin-top: 100px;
+    padding-top: 50px;
+  }
+
+  &__img {
+    width: 49%;
   }
 
   &__img-ipad {
     width: 100%;
+    height: 100%;
   }
 
   &__info {
-    margin-left: 130px;
-    margin-bottom: 100px;
+    width: 49%;
+    padding-left: 25px;
 
     &_background {
-      width: 584px;
       background: url("../../../img/background-users-icon.jpg") bottom center no-repeat;
       background-size: contain;
     }
@@ -34,7 +39,6 @@
     }
 
     &-text {
-      width: 530px;
       font: $paragraph2Size $mainFont;
       color: $BOULDER;
       margin-bottom: 40px;
@@ -56,8 +60,6 @@
   }
 
   &__info {
-    width: 420px;
-
     &-title {
       text-transform: $textTransform;
       font: bold $heading3Size $headline2Font;
@@ -77,6 +79,28 @@
     font-size: 28px;
     color: $BOULDER;
     margin-right: 15px;
+  }
+}
+
+
+@media (max-width: 1023px) {
+  .portfolio__info-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio {
+    flex-direction: column;
+    align-items: center;
+
+    &__info_background {
+      width: 92%;
+    }
+
+    &__img {
+      width: 100%;
+    }
   }
 }
 
