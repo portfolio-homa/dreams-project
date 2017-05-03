@@ -18,7 +18,7 @@
 }
 
 .event {
-  width: 875px;
+  max-width: 875px;
   margin: 85px auto 0;
 
   &__item {
@@ -112,5 +112,12 @@
   &__text {
     font: $paragraph2Size $mainFont;
     color: $BOULDER;
+  }
+}
+
+
+@media (max-width: 1023px) {
+  .about__title {
+    font-size: 30px;
   }
 }

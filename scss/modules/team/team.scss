@@ -21,6 +21,7 @@
   justify-content: space-between;
   margin-top: 80px;
   margin-bottom: 70px;
+  padding: 0 10px;
 
   &__item {
     width: 220px;
@@ -53,7 +54,7 @@
 
   &__text {
     text-align: center;
-    width: 590px;
+    max-width: 590px;
     font: $paragraph1Size $mainFont;
     color: $BOULDER;
     margin: 0 auto;
@@ -82,5 +83,31 @@
     color: $WHITE;
     background-color: $COD_GRAY;
     line-height: 40px;
+  }
+}
+
+
+@media (max-width: 1023px) {
+  .team__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .teams {
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+      margin-bottom: 60px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__text {
+      padding: 0 10px 60px;
+    }
   }
 }
