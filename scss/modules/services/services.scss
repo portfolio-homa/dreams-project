@@ -57,6 +57,12 @@
 }
 
 
+@media (max-width: 1023px) {
+  .core-services__title {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 767px) {
   .services {
     flex-direction: column;

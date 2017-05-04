@@ -15,7 +15,8 @@
   &__line {
     display: block;
     height: 1px;
-    width: 945px;
+    width: 100%;
+    margin: auto;
     background-color: $WHITE;
   }
 
@@ -123,6 +124,10 @@
 
     &__flex {
       display: block;
+    }
+
+    &__line {
+      width: 95%;
     }
   }
 
