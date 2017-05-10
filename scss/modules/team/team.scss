@@ -26,30 +26,6 @@
   &__item {
     width: 220px;
 
-    &-img {
-      width: 220px;
-      height: 220px;
-      background-color: $COD_GRAY;
-      border-radius: 50%;
-      margin-bottom: 25px;
-    }
-
-    &-title, &-text {
-      text-align: center;
-    }
-
-    &-title {
-      text-transform: capitalize;
-      font: $heading3Size $headline1Font;
-      margin-bottom: 10px;
-    }
-
-    &-text {
-      display: block;
-      font: $heading4Size $mainFont;
-      color: $BOULDER;
-      margin-bottom: 15px;
-    }
   }
 
   &__text {
@@ -60,6 +36,31 @@
     margin: 0 auto;
     padding-bottom: 100px;
   }
+}
+
+.teams__item-img {
+  width: 220px;
+  height: 220px;
+  background-color: $COD_GRAY;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.teams__item-title, .teams__item-text {
+  text-align: center;
+}
+
+.teams__item-title {
+  text-transform: capitalize;
+  font: $heading3Size $headline1Font;
+  margin-bottom: 10px;
+}
+
+.teams__item-text {
+  display: block;
+  font: $heading4Size $mainFont;
+  color: $BOULDER;
+  margin-bottom: 15px;
 }
 
 .icons {
@@ -73,19 +74,16 @@
   }
 }
 
-.fa {
-  &-twitter, &-facebook, &-pinterest-p, &-google-plus {
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 20px;
-    color: $WHITE;
-    background-color: $COD_GRAY;
-    line-height: 40px;
-  }
+.fa-twitter, .fa-facebook, .fa-pinterest-p, .fa-google-plus {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: $WHITE;
+  background-color: $COD_GRAY;
+  line-height: 40px;
 }
-
 
 @media (max-width: 1023px) {
   .team__title {

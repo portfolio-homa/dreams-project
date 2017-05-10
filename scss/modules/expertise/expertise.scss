@@ -11,12 +11,12 @@
 
   &__block {
     width: 47%;
-
-    &-img {
-      width: 100%;
-      height: 100%;
-    }
   }
+}
+
+.expertise-wrap__block-img {
+  width: 100%;
+  height: 100%;
 }
 
 .other-expertise {
@@ -66,30 +66,28 @@
     width: 49%;
     display: flex;
     margin-bottom: 30px;
-
-    &-title {
-      text-transform: $textTransform;
-      font: bold $heading4Size $headline2Font;
-      color: $MINE_SHAFT;
-    }
-
-    &-text {
-      font: $paragraph2Size $mainFont;
-      color: $BOULDER;
-    }
   }
 }
 
-.fa {
-  &-cog, &-cloud, &-star-o, &-lock {
-    font-size: 30px;
-    color: $BOULDER;
-    margin-right: 15px;
-  }
+.expertise__item-title {
+  text-transform: $textTransform;
+  font: bold $heading4Size $headline2Font;
+  color: $MINE_SHAFT;
+}
 
-  &-lock {
-    margin-left: 10px;
-  }
+.expertise__item-text {
+  font: $paragraph2Size $mainFont;
+  color: $BOULDER;
+}
+
+.fa-cog, .fa-cloud, .fa-star-o, .fa-lock {
+  font-size: 30px;
+  color: $BOULDER;
+  margin-right: 15px;
+}
+
+.fa-lock {
+  margin-left: 10px;
 }
 
 

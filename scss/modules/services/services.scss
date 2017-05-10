@@ -1,15 +1,15 @@
 .core-services {
-  background-color: $WHITE;
+   background-color: $WHITE;
 
-  &__title {
-    text-align: center;
-    text-transform: $textTransform;
-    font: $heading2Size $headline1Font;
-    color: $MINE_SHAFT;
-    margin-top: 100px;
-    margin-bottom: 40px;
-  }
-}
+   &__title {
+     text-align: center;
+     text-transform: $textTransform;
+     font: $heading2Size $headline1Font;
+     color: $MINE_SHAFT;
+     margin-top: 100px;
+     margin-bottom: 40px;
+   }
+ }
 
 .line_color {
   background-color: $MALIBU;
@@ -28,34 +28,32 @@
       margin-right: 0;
     }
 
-    &-title, &-text {
-      text-align: center;
-    }
-
-    &-title {
-      text-transform: $textTransform;
-      font: bold $heading3Size $headline2Font;
-      color: $MINE_SHAFT;
-      margin-bottom: 20px;
-    }
-
-    &-text {
-      font: $paragraph2Size $mainFont;
-      color: $GRAY;
-    }
   }
 }
 
-.fa {
-  &-wrench, &-sitemap, &-life-ring {
-    display: block;
-    text-align: center;
-    font-size: 55px;
-    color: $ALTO;
-    margin-bottom: 40px;
-  }
+.services__item-title, .services__item-text {
+  text-align: center;
 }
 
+.services__item-title {
+  text-transform: $textTransform;
+  font: bold $heading3Size $headline2Font;
+  color: $MINE_SHAFT;
+  margin-bottom: 20px;
+}
+
+.services__item-text {
+  font: $paragraph2Size $mainFont;
+  color: $GRAY;
+}
+
+.fa-wrench, .fa-sitemap, .fa-life-ring {
+  display: block;
+  text-align: center;
+  font-size: 55px;
+  color: $ALTO;
+  margin-bottom: 40px;
+}
 
 @media (max-width: 1023px) {
   .core-services__title {

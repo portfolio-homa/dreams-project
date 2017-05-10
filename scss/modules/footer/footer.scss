@@ -54,21 +54,21 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-
-    &-icon {
-      width: 25px;
-      font-size: 30px;
-      color: $WHITE;
-      flex-grow: 0;
-    }
-
-    &-text {
-      font: $paragraph1Size $mainFont;
-      color: $WHITE;
-      flex-grow: 1;
-      margin-left: 25px;
-    }
   }
+}
+
+.our-contacts__item-icon {
+  width: 25px;
+  font-size: 30px;
+  color: $WHITE;
+  flex-grow: 0;
+}
+
+.our-contacts__item-text {
+  font: $paragraph1Size $mainFont;
+  color: $WHITE;
+  flex-grow: 1;
+  margin-left: 25px;
 }
 
 .our-contacts__item-wrap {
@@ -167,10 +167,6 @@
   .inputs-button__wrap {
     text-align: center;
   }
-}
-
-@media (max-width: 767px) {
-
 }
 
 @media (max-width: 480px) {
