@@ -57,13 +57,6 @@
   }
 }
 
-.our-contacts__item-icon {
-  width: 25px;
-  font-size: 30px;
-  color: $WHITE;
-  flex-grow: 0;
-}
-
 .our-contacts__item-text {
   font: $paragraph1Size $mainFont;
   color: $WHITE;
@@ -76,6 +69,13 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+
+.our-contacts__item-icon {
+  width: 25px;
+  font-size: 30px;
+  color: $WHITE;
+  flex-grow: 0;
 }
 
 .our-contacts__item .fa-mobile {

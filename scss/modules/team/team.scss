@@ -72,17 +72,20 @@
   &_width {
     width: 90px;
   }
+
+  &__link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $COD_GRAY;
+    text-align: center;
+    line-height: 47px;
+  }
 }
 
 .fa-twitter, .fa-facebook, .fa-pinterest-p, .fa-google-plus {
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
   font-size: 20px;
   color: $WHITE;
-  background-color: $COD_GRAY;
-  line-height: 40px;
 }
 
 @media (max-width: 1023px) {

@@ -1,10 +1,11 @@
 /*helpers*/
-@import "../css/animateCss/fadeInLeft";
-@import "../css/animateCss/fadeInRight";
-@import "../css/animateCss/fadeOutLeft";
-@import "../css/animateCss/fadeOutRight";
-@import "../css/normalize.css/normalize";
-@import "helpers/scss-font-awesome/font-awesome";
+@import "../node_modules/animate.scss/vendor/assets/stylesheets/animate";
+@import "../node_modules/animate.scss/vendor/assets/stylesheets/animate/fadeInLeft";
+@import "../node_modules/animate.scss/vendor/assets/stylesheets/animate/fadeInRight";
+@import "../node_modules/animate.scss/vendor/assets/stylesheets/animate/fadeOutLeft";
+@import "../node_modules/animate.scss/vendor/assets/stylesheets/animate/fadeOutRight";
+@import "helpers/normalize";
+@import "helpers/fontawesome/font-awesome";
 @import "../node_modules/hover.css/scss/effects/2d-transitions/_shrink";
 @import "../node_modules/hover.css/scss/_hacks";
 @import "../node_modules/hover.css/scss/_mixins";
