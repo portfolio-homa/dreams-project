@@ -11,8 +11,6 @@
     "gulp-sass": "^3.1.0"
   },
   "dependencies": {
-    "animate.scss": "0.0.6",
-    "fontawesome-scss": "^2.0.4",
     "hover.css": "^2.2.0"
   }
 }
