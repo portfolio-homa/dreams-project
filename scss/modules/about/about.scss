@@ -53,38 +53,38 @@
   &__item:nth-child(2n) {
     flex-direction: row-reverse;
   }
-}
 
-.event__item-image {
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  border: 7px solid $SEASHELL;
+  &__item-image {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 7px solid $SEASHELL;
 
-  &_color {
-    background-color: $PICTON_BLUE_LIGHT;
-    transition: background-color 0.2s;
+    &_color {
+      background-color: $PICTON_BLUE_LIGHT;
+      transition: background-color 0.2s;
 
-    &:hover {
-      background-color: rgba($PICTON_BLUE_LIGHT, 0.5);
+      &:hover {
+        background-color: rgba($PICTON_BLUE_LIGHT, 0.5);
+      }
+    }
+
+    &:hover .event__item-text {
+      color: $MINE_SHAFT;
     }
   }
-}
 
-.event__item-image:hover .event__item-text {
-  color: $MINE_SHAFT;
-}
-
-.event__item-text {
-  width: 93px;
-  text-align: center;
-  text-transform: $textTransform;
-  font: $heading3Size $headline2Font;
-  color: $WHITE;
-  margin: auto;
-  position: relative;
-  top: 30%;
-  transition: color 0.2s;
+  &__item-text {
+    width: 93px;
+    text-align: center;
+    text-transform: $textTransform;
+    font: $heading3Size $headline2Font;
+    color: $WHITE;
+    margin: auto;
+    position: relative;
+    top: 30%;
+    transition: color 0.2s;
+  }
 }
 
 .hiddenItem {

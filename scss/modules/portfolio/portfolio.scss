@@ -31,19 +31,19 @@
       background-size: contain;
     }
   }
-}
 
-.portfolio__info-title {
-  text-transform: $textTransform;
-  font: $heading2Size $headline1Font;
-  color: $MINE_SHAFT;
-  margin-bottom: 50px;
-}
+  &__info-title {
+    text-transform: $textTransform;
+    font: $heading2Size $headline1Font;
+    color: $MINE_SHAFT;
+    margin-bottom: 50px;
+  }
 
-.portfolio__info-text {
-  font: $paragraph2Size $mainFont;
-  color: $BOULDER;
-  margin-bottom: 40px;
+  &__info-text {
+    font: $paragraph2Size $mainFont;
+    color: $BOULDER;
+    margin-bottom: 40px;
+  }
 }
 
 .list {
@@ -58,18 +58,18 @@
   &__item:last-child {
     margin-bottom: 0;
   }
-}
 
-.list__info-title {
-  text-transform: $textTransform;
-  font: bold $heading3Size $headline2Font;
-  color: $MINE_SHAFT;
-  margin-bottom: 15px;
-}
+  &__info-title {
+    text-transform: $textTransform;
+    font: bold $heading3Size $headline2Font;
+    color: $MINE_SHAFT;
+    margin-bottom: 15px;
+  }
 
-.list__info-text {
-  font: $paragraph2Size $mainFont;
-  color: $BOULDER;
+  &__info-text {
+    font: $paragraph2Size $mainFont;
+    color: $BOULDER;
+  }
 }
 
 .fa-pie-chart {

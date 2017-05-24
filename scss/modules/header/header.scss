@@ -16,30 +16,30 @@
     margin: 170px auto 0;
     padding: 0 20px;
   }
-}
 
-.header__nav-logo {
-  text-decoration: none;
-  font: 36px $logoFont;
-  text-transform: capitalize;
-  color: $WHITE;
-  flex-grow: 2;
-}
+  &__nav-logo {
+    text-decoration: none;
+    font: 36px $logoFont;
+    text-transform: capitalize;
+    color: $WHITE;
+    margin-right: 400px;
+  }
 
-.header__info-title {
-  text-transform: $textTransform;
-  text-align: center;
-  font: $heading1Size $headline1Font;
-  color: $WHITE;
-  padding-bottom: 50px;
-}
+  &__info-title {
+    text-transform: $textTransform;
+    text-align: center;
+    font: $heading1Size $headline1Font;
+    color: $WHITE;
+    padding-bottom: 50px;
+  }
 
-.header__info-text {
-  max-width: 448px;
-  text-align: center;
-  font: 20px $mainFont;
-  color: $SILVER;
-  margin: 50px auto 0;
+  &__info-text {
+    max-width: 448px;
+    text-align: center;
+    font: 20px $mainFont;
+    color: $SILVER;
+    margin: 50px auto 0;
+  }
 }
 
 .line {
@@ -62,15 +62,28 @@
     font: $paragraph1Size $headline2Font;
     color: $WHITE;
     transition: color 0.2s;
-    flex-grow: 1;
+    margin-right: 20px;
 
     &:last-child {
-      flex-grow: 0;
+      margin-right: 0;
     }
 
     &:hover {
       color: $PICTON_BLUE;
     }
+  }
+}
+
+
+@media (max-width: 1150px) {
+  .header__nav-logo {
+    margin-right: 250px;
+  }
+}
+
+@media (max-width: 950px) {
+  .header__nav-logo {
+    margin-right: 120px;
   }
 }
 
@@ -84,20 +97,15 @@
     &__info {
       margin-top: 110px;
     }
+
+    &__nav-logo {
+      margin: auto;
+    }
   }
 
   .navigation {
     text-align: center;
-
-    &__item {
-      margin-right: 20px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
   }
-
 }
 
 @media (max-width: 544px) {
@@ -107,6 +115,7 @@
     &__item {
       display: block;
       margin-bottom: 20px;
+      margin-right: 0;
     }
   }
 
@@ -114,14 +123,14 @@
     &__info {
       margin-top: 30px;
     }
-  }
 
-  .header__info-title {
-    font-size: 30px;
-    padding-bottom: 30px;
-  }
+    &__info-title {
+      font-size: 30px;
+      padding-bottom: 30px;
+    }
 
-  .header__info-text {
-    margin-top: 30px;
+    &__info-text {
+      margin-top: 30px;
+    }
   }
 }

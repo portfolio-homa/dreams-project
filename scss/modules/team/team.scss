@@ -25,7 +25,6 @@
 
   &__item {
     width: 220px;
-
   }
 
   &__text {
@@ -36,31 +35,31 @@
     margin: 0 auto;
     padding-bottom: 100px;
   }
-}
 
-.teams__item-img {
-  width: 220px;
-  height: 220px;
-  background-color: $COD_GRAY;
-  border-radius: 50%;
-  margin-bottom: 25px;
-}
+  &__item-img {
+    width: 220px;
+    height: 220px;
+    background-color: $COD_GRAY;
+    border-radius: 50%;
+    margin-bottom: 25px;
+  }
 
-.teams__item-title, .teams__item-text {
-  text-align: center;
-}
+  &__item-title, &__item-text {
+    text-align: center;
+  }
 
-.teams__item-title {
-  text-transform: capitalize;
-  font: $heading3Size $headline1Font;
-  margin-bottom: 10px;
-}
+  &__item-title {
+    text-transform: capitalize;
+    font: $heading3Size $headline1Font;
+    margin-bottom: 10px;
+  }
 
-.teams__item-text {
-  display: block;
-  font: $heading4Size $mainFont;
-  color: $BOULDER;
-  margin-bottom: 15px;
+  &__item-text {
+    display: block;
+    font: $heading4Size $mainFont;
+    color: $BOULDER;
+    margin-bottom: 15px;
+  }
 }
 
 .icons {
@@ -80,6 +79,11 @@
     background-color: $COD_GRAY;
     text-align: center;
     line-height: 47px;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $PICTON_BLUE;
+    }
   }
 }
 
